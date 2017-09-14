@@ -23,25 +23,24 @@ public class arrayList
 				
 		
 			for (int i = 0; i < bodyTemps.size(); i++) 
-			{
-				
-				System.out.println(bodyTemps.get(i) + " degrees Fahrenheit");
-			}
+				{
+					System.out.println(bodyTemps.get(i) + " degrees Fahrenheit");
+				}
+			
 			System.out.println("People with a fever: ");
 			
-			removingFever(bodyTemps);
+			for (int j = 0; j < bodyTemps.size(); j++) 
+				{
+					if (bodyTemps.get(j) > 98.6) 
+						{
+							System.out.println(bodyTemps.get(j));
+						}
+				}
+				
+				
 			
 			
 		}
 
-		private static void removingFever(ArrayList<Double> bodyTemps) {
-			bodyTemps.remove(1);
-			bodyTemps.remove(2);
-			bodyTemps.remove(3);
-			bodyTemps.remove(4);
-			bodyTemps.remove(10);
-			System.out.println(bodyTemps);
-			
-		}
 
 	}
